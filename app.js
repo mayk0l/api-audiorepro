@@ -2,7 +2,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = process.env || 3000;
+const port = process.env.PORT || 3000;
 
 // Ruta a la carpeta de archivos estáticos
 app.use('/audio-files', express.static(path.join(__dirname, 'audio-files')));
